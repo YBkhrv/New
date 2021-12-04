@@ -9,9 +9,9 @@
 4.	To run the container with the application in the Kubernetes cluster:  make sure ExampleApp accepts requests on port 8800;
 5.	Create a directory and subdirectories:
 to open console in Linux use Ctrl+Alt+F1;
-to open console in Windows 8, 8.1, 10 press the Win+S on the keyboard,type cmd in the search bar;
+to open console in Windows 8, 8.1, 10 press  Win+S,type cmd in the search bar;
 to run the command line:
-with administrator rights, right-click on the Command line and select Run as Administrator;
+with the administrator rights, right-click on the Command line and select Run as Administrator;
 with the rights of a regular user, select Command line.
 To open console in Windows 7 press Win+R.
 
@@ -21,6 +21,7 @@ DO NOT CLOSE THE CONSOLE DURING THE WHOLE PROCESS!
 Type cd followed by a space in the command prompt window.
 Drag and drop the folder you want to browse into the window.
 Press Enter.
+
 7.	Type:
 ```sh
 mkdir quickstart_docker
