@@ -3,17 +3,17 @@
 
 **Docker** is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.  
 **Kubernetes** (commonly stylized as K8s) is an open-source container-orchestration system for automating computer application deployment, scaling, and management.
-1.	Download Docker [here](https://docs.docker.com/get-docker/)
-2.	Docker Installation instructions [here](https://docs.docker.com/get-started/) 
-3.	Download Kubernetes [here](https://kubernetes.io/releases/download/) 
-4.	To run the container with the application in the Kubernetes cluster:  make sure ExampleApp accepts requests on port 8800. 
+1.	Download Docker [here](https://docs.docker.com/get-docker/);
+2.	Docker Installation instructions [here](https://docs.docker.com/get-started/);
+3.	Download Kubernetes [here](https://kubernetes.io/releases/download/);
+4.	To run the container with the application in the Kubernetes cluster:  make sure ExampleApp accepts requests on port 8800;
 5.	Create a directory and subdirectories:
-To open console in Linux use Ctrl+Alt+F1;
-To open console in Windows 8, 8.1, 10 press the Win+S on the keyboard,type cmd in the search bar.
-To run the command line:
+to open console in Linux use Ctrl+Alt+F1;
+to open console in Windows 8, 8.1, 10 press the Win+S on the keyboard,type cmd in the search bar;
+to run the command line:
 with administrator rights, right-click on the Command line and select Run as Administrator;
 with the rights of a regular user, select Command line.
-To open console in Windows 7 press Win+R
+To open console in Windows 7 press Win+R.
 
 DO NOT CLOSE THE CONSOLE DURING THE WHOLE PROCESS!
 
@@ -34,9 +34,8 @@ quickstart_docker/ # Catalog of the entire project
 └──docker/               # Docker stuff
    └──application/    # Dockerfile(a text document that contains all the commands a user could call on the command line to assemble an image) for ExampleApp
 
-8.	For the example deployment:
-To put application.py in the quickstart_docker/application directory in the console type:
-```sh
+8.	For the example deployment  put application.py in the quickstart_docker/application directory in the console type:
+```sh 
 import http.server
 import socketserver
 PORT = 8000
@@ -45,11 +44,10 @@ httpd = socketserver.TCPServer(("", PORT), Handler)
 print("serving at port", PORT)
 httpd.serve_forever()
 ```
-9.	The application needs an environment. At a minimum, python will be needed and  OS with all the dependencies.You can find it here: https://hub.docker.com/_/python 
+9.	The application needs an environment. At a minimum, python will be needed and  OS with all the dependencies.You can find it [here](https://hub.docker.com/_/python) 
 Python and its dependencies have to be downloaded in the same directory as Docker.
 
-10.	Still in console:
-In the quickstart_docker/docker/application directory put a file named Dockerfile and the following contents:
+10.	Still in console in the quickstart_docker/docker/application directory put a file named Dockerfile and the following contents:
 ```sh
 # Use base image from the registry
 FROM python:3.5
@@ -74,7 +72,7 @@ docker build . -f-docker/application/Dockerfile -t exampleapp
 .- working directory, build context;
 -f docker/application/Dockerfile - docker-file; 
 -t exampleapp - tag the image so that you can find it later.
-Learn more about building images for Docker here: https://docs.docker.com/engine/reference/builder/
+Learn more about building images for Docker [here](https://docs.docker.com/engine/reference/builder/)
 12.	List of images:
 REPOSITORY             TAG             IMAGE ID            CREATED             SIZE
 exampleapp             latest          83wse0edc28a        2 seconds ago       153MB
