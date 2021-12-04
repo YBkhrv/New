@@ -73,9 +73,11 @@ docker build . -f-docker/application/Dockerfile -t exampleapp
 -f docker/application/Dockerfile - docker-file; 
 -t exampleapp - tag the image so that you can find it later.
 Learn more about building images for Docker [here](https://docs.docker.com/engine/reference/builder/)
-12.	List of images:
-REPOSITORY             TAG             IMAGE ID            CREATED             SIZE
-exampleapp             latest          83wse0edc28a        2 seconds ago       153MB
-python                 3.6             05sob8636w3f        6 weeks ago         153MB
+12.	To look through the list of images in the console type "$ docker images" :
+
+| REPOSITORY|TAG  | IMAGE ID | CREATED | SIZE| 
+| ------ | ------ || ------ | ------ || ------ |
+|exampleapp  |           latest  |        83wse0edc28a    |    2 seconds ago   |    153MB|
+|python      |           3.6      |       05sob8636w3f    |    6 weeks ago      |   153MB|
 
 13.	Upload the image to the repository:[here](https://www.cloudbees.com/blog/using-docker-push-to-publish-images-to-dockerhub)
