@@ -9,10 +9,13 @@
 4.	To run the container with the application in the Kubernetes cluster make sure ExampleApp accepts requests on port 8800;
 5.	Create a directory and subdirectories:
 to open a console in Linux use Ctrl+Alt+F1;
+
 in Windows 8, 8.1, 10 press  Win+S,type cmd in a search bar;
+
 to run a command line:
 with the administrator rights, right-click on the command line and select Run as Administrator;
 with the rights of a regular user, select the command line.
+
 To open the console in Windows 7 press Win+R.
 
 6.	In the console choose the directory you would like to work in:
@@ -28,9 +31,13 @@ mkdir quickstart_docker/docker
 mkdir quickstart_docker/docker/application
 ```
  The structure:
+ 
 quickstart_docker/    # Catalog of the entire project
+
 ├──application/       # Project code
+
 └──docker/            # Docker stuff
+
    └──application/    # Dockerfile(a text document that contains all the commands a user could call on the command line to assemble an image) for ExampleApp
 
 8.	For the example deployment  put application.py in the quickstart_docker/application directory in the console type:
@@ -69,8 +76,11 @@ docker build . -f-docker/application/Dockerfile -t exampleapp
 ```
 **Arguments**: 
 .- working directory, build context;
+
 -f docker/application/Dockerfile - docker-file; 
+
 -t exampleapp - tag the image so that you can find it later.
+
 Learn more about building images for Docker [here](https://docs.docker.com/engine/reference/builder/)
 
 12.	To look through the list of images in the console type $ docker images:
