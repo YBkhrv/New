@@ -75,6 +75,7 @@ CMD ["python", "/app/application.py"]
 docker build . -f-docker/application/Dockerfile -t exampleapp
 ```
 **Arguments**: 
+
 .- working directory, build context;
 
 -f docker/application/Dockerfile - docker-file; 
