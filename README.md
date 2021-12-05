@@ -91,4 +91,4 @@ Learn more about building images for Docker [here](https://docs.docker.com/engin
 |exampleapp  |           latest   |        83wse0edc28a   |    2 seconds ago    |    153MB|
 |python      |           3.6      |       05sob8636w3f    |    6 weeks ago      |   153MB|
 
-13.	Upload the image to the repository:[here](https://www.cloudbees.com/blog/using-docker-push-to-publish-images-to-dockerhub)
+13.	Upload the image to the repository: [here](https://www.cloudbees.com/blog/using-docker-push-to-publish-images-to-dockerhub)
